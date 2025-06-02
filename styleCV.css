@@ -1,0 +1,144 @@
+
+
+h1,
+h2,
+p,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+h1{
+    color: #0056b3;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 100;
+}
+html,
+body {
+    margin: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+.position{
+    
+    float: left;
+    width: 25%;
+    /*margin: 1.5em 0 1.5em 0; */
+    padding: 15px 10% 0 10%;
+}
+.position .cadre {
+    border: 2px solid #adacac;
+    border-radius: 10px;
+    /*margin: 15px 0;
+    border-style: ridge; */
+    
+}
+
+.position .cadre:first-child {
+    margin: 0;
+}
+
+.position .cadre h2 {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    background: #f2f3f3;
+    border-bottom: 1px solid #714141;
+    border-radius: 10px 10px 0 0;
+    
+
+}
+/*
+.position .cadre p {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #20469f9d;
+}
+
+.cadre form {
+    padding: 10px;
+}
+
+
+.position .cadre ul li {
+    margin: 10px 0 0 30px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+    clip: rect(0 60px 30px 0);
+}
+*/
+
+.download-container{
+    text-align: center;
+    margin: 5px auto;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+
+}
+
+.download-link{
+    display: inline-block;
+    padding: 2px 2px;
+    background-color: #007bffa8;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.download-link:hover{
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+
+}
+
+.download-link:active{
+    transform: translateY(1px);
+}
+
+.download-link::before{
+    content: "£";
+    margin-right: 5px;
+}
+
+a[href$=".pdf"]::after{
+    content: "(PDF)";
+    font-size: 0.8em;
+    color: #c20202;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .position{
+        width: 100px;
+        
+    
+} 
+
+.position .cadre {
+    width: 100%;
+}
+
+/* .download-container {
+    width: 20%;
+} */
+}
+
+@media (max-width:992px) {}
+
+@media (max-width:1200px) {}
